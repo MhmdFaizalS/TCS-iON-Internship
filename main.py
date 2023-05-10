@@ -85,4 +85,4 @@ def result():
     return render_template('result.html', result=status,feature_scores=feature_scores.to_dict('records'))
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=5000)
+    app.run(debug=True)
